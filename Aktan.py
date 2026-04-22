@@ -7,14 +7,14 @@ while True:
     print("4 - Выход")
     choice = input("Выбор: ")
     if choice == "1":
-        name = input("Введите ФИО: ")
+        name = input("Введите ФИО: ").strip()
         if name not in students:
             students[name] = []
             print("Добавлен")
         else:
             print("Студент уже есть")
     elif choice == "2":
-        name = input("Имя Фамилия: ")
+        name = input("Имя Фамилия: ").strip()
         if name in students:
             try:
                 grade = int(input("Оценка: "))
