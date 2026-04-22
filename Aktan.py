@@ -1,20 +1,20 @@
 students = {}
 
 while True:
-    print("\n1 - Добавить студента")
+    print("1 - Добавить студента")
     print("2 - Добавить оценку")
     print("3 - Показать журнал")
     print("4 - Выход")
     choice = input("Выбор: ")
     if choice == "1":
-        name = input("Имя: ")
+        name = input("Введите ФИО: ")
         if name not in students:
             students[name] = []
             print("Добавлен")
         else:
             print("Студент уже есть")
     elif choice == "2":
-        name = input("Имя: ")
+        name = input("Имя Фамилия: ")
         if name in students:
             try:
                 grade = int(input("Оценка: "))
